@@ -14,12 +14,14 @@ import footer from "../footer"
 
 function App() {
     return <div>
-                <Header />
-                <Miniheader />
-                <button className="search"> <span>Search merchbuy</span> <div className="searchIcon"><Search/></div></button>
-                <InfoCard />
-                <div className="icon_cover"> {smallcard.map( card => <Card key={card.id} image={card.img} name={card.name}/> )} </div>
-                <div className="product_cover"> {product.map( products => <Product key={products.id} images={products.img} pname={products.name} lprice={products.lprice} hprice={products.hprice} pieces={products.piece}/> )} </div>
+                <div className="wrapper">
+                    <Header />
+                    <Miniheader />
+                    <button className="search"> <span>Search merchbuy</span> <div className="searchIcon"><Search/></div></button>
+                    <InfoCard />
+                    <div className="icon_cover"> {smallcard.map( card => <Card key={card.id} image={card.img} name={card.name}/> )} </div>
+                    <div className="product_cover"> {product.map( products => <Product key={products.id} images={products.img} pname={products.name} lprice={products.lprice} hprice={products.hprice} pieces={products.piece}/> )} </div>
+                </div>
                 <div className="footer_cover"> {footer.map( foot => <Footer key={foot.id} icon={foot.icon} name={foot.name}/> )} </div>
             </div>
 }
