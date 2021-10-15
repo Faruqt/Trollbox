@@ -16,7 +16,9 @@ function Miniheader() {
       <div className="mini-header1">
         <div>
             <label htmlFor="category"><Location /></label>
-            <span> {inputText} </span>
+            <div className="currentLocation">
+              <span > {inputText} </span>
+            </div>
             <select id="category" value={inputText} onChange={handleChange}>
                 <option className="" value=""></option>
                 <option className="" value="Lagos">Lagos</option>
@@ -29,15 +31,15 @@ function Miniheader() {
         <hr className="midCat"/>
         <div> 
             <Wallet />
-            <span> <a href="#">  My orders </a> </span>   
+            <span className="walletText"> <a className="orders" href="#">  My orders </a> </span>   
         </div>
         <hr className="midCat"/>
         <div>
-        <a className="css-1kuyhv6" type="button" aria-haspopup="true" data-ga-event-category="AppBar" data-ga-event-action="toggleNotifications" aria-label="Toggle notifications panel">
+        <a className="" type="button" aria-haspopup="true" data-ga-event-category="AppBar" data-ga-event-action="toggleNotifications" aria-label="Toggle notifications panel">
           <span className="cart"> <ShoppingCartIcon /> <span className="quantity">9</span></span>
-          <span className="MuiTouchRipple-root css-w0pj6f"></span>
+          <span className="MuiTouchRipple-root"></span>
         </a>
-        <span className=""> 
+        <span className="carty"> 
           <a> Cart </a> 
         </span>
       </div>
