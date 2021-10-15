@@ -269,7 +269,7 @@ footer p {
   height: 24px;
 }
 
-.product_cover, .icon_cover{
+.product_cover{
     margin-left: 18px;
     display:flex;
 }
