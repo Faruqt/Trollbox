@@ -427,12 +427,13 @@ footer p {
   padding-bottom:47px;
   border-radius: 10px;
   float: left;
-  width:83%;
+  width:80%;
   height: 123px;
+  margin-right: 5%; 
 }
 .card-two{
   background: #227EFF;
-  margin-right: 0px; 
+  /* margin-right: 0px;  */
 }
 .card-three{
   background: #EE6F44;
